@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con{
+    margin-top: 345px;
+}
+.head{
+    display: none;
+}
+.div{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 250px;
+    background-color: whitesmoke;
+    animation: huge 1s ease-in;
+    -webkit-animation: huge 1s ease-in;
+}
+@keyframes huge {
+    0%{
+        width: 50px;
+    }
+    25%{
+        width: 100px;
+    }
+    50%{
+        width: 150px;
+    }
+    75%{
+        width: 200px;
+    }
+    100%{
+        width: 250px;
+    }
+}
+#i{
+    color: gray;
+}
+.inp{
+    width: 155px;
+    border: 1px solid whitesmoke;
+    padding: 5px;
+    background-color: whitesmoke;
+}
+#icon{    
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+    border-radius: 999px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.enter{
+    display: none;
+    margin-top: 115px;
+}
+.main{
+    display: flex;
+}
+.info{
+    width: 320px;
+    height: 525px;
+    background-image: url(./image/pexels-jplenio-1118873.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 265px;
+    padding: 20px;
+    color: white;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+}
+.info:hover{
+    transform: scale(1.1);
+}
+h4{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.days{
+    background-color: black;
+    width: 695px;
+    height: 485px;
+    margin-top: 20px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    padding: 30px;
+}
+.humidity,.wind{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.day{
+    margin-top: 85px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.box1{
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 170px;
+    height: 115px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+.box1:hover{
+    transform: scale(1.1);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 170px;
+    height: 115px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    color: white;
+}
+.box:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+button{
+    padding:15px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 20px;
+    width: 100%;
+    margin-top: 65px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    border: 1px solid  rgba(78,100,219,1);
+    background: linear-gradient(90deg, rgba(23,226,246,1) 0%, rgba(21,231,247,1) 20%, rgba(38,193,239,1) 51%, rgba(78,100,219,1) 78%);
+}
+button:hover{
+    transform: scale(.9);
+    opacity: 70%;
+}
+#wind{
+    font-size: 1.5rem;
+}
