@@ -63,7 +63,7 @@ let location= await fetch(`https://us1.locationiq.com/v1/search.php?key=pk.6071c
         }
     document.querySelector(".date").innerHTML= day+""+""+getMonthName(date.getMonth())+","+year
     function getDayname(number){
-        switch(number){
+        switch(number%7){
             case 0:
                 return "Sun";
             case 1:
